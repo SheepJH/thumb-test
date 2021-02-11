@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+    
+     <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>따봉테스트</title>
+<link rel="stylesheet" href="style.css">
+
+        
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60251dcd109e9e7f"></script>
+
+
+         
+  </head>
+
+    
+    <body>
+        
+        
+        <!-- navbar -->
+        
+        <nav class="navbar navbar-expand-lg navbar-light nav-distance">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">따봉테스트</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+        
+        <!-- 섹션들 -->
+        
+        <section class="section">
+            <h1 class="title">엄지손가락으로 보는 운세 테스트</h1>
+            <h2 class="subtitle">나는 어떤 운을 타고났을까?</h2>
+            
+        </section>
+        
+        <section class="youtube">
+            <div class="container mt-5 youtube-cover d-flex flex-row-reverse">
+                
+             
+            
+            
+            </div>
+            
+        </section>
+        
+        <!-- 이미지업로드 -->
+        
+        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        
+<div class="container file-upload">
+  
+
+  <div class="image-upload-wrap">
+    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+    <div class="drag-text">
+        <img src="img/like.png"
+     class="mt-5 pt-5 upload">
+        
+        
+        
+      <h3 class = "upload-text">엄지손가락 사진을 올려놓거나
+눌러서 업로드하세요!</h3>
+    </div>
+  </div>
+    
+    
+  <div class="file-upload-content">
+    <img class="file-upload-image" id="thumb-image" src="#" alt="your image" />
+      
+      <!-- 로딩 동그라미 -->
+        <div class="mt-5 loadings" style="display:none">
+
+           
+
+
+<div class="spinner-grow sp1"></div>            
+<div class="spinner-grow sp2"></div>
+<div class="spinner-grow sp3"></div>
+<div class="spinner-grow sp4"></div>
+<div class="spinner-grow sp5"></div>
+<div class="spinner-grow sp6"></div>
+<div class="spinner-grow sp7"></div>
+      <div class="mt-5 loading-text">인공지능이 당신의 손가락을 분석하고 있습니다..........</div>  
+      </div>
+      
+      
+      <p class="mt-3 result-message"></p>
+      <div id="label-container"></div>
+     
+      
+      
+      <!-- 막대그래프 -->
+        <div class="mt-4 container progress-cover">
+ 
+           <div class="pro1" style="float:left; margin-right: 20px;"></div>             
+<div class="progress"> 
+<div class="progress-bar progress1" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+            <div class="mt-2 pro2" style="float:left; margin-right: 20px;"></div>   
+<div class="mt-2 progress">
+  <div class="progress-bar progress2" role="progressbar"  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+</div> 
+            
+            <div class="mt-2 pro3" style="float:left; margin-right: 20px;"></div> 
+<div class="mt-2 progress">
+  <div class="progress-bar progress3" role="progressbar"  aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+            
+            <div class="mt-2 pro4" style="float:left; margin-right: 20px;"></div> 
+<div class="mt-2 progress">
+  <div class="progress-bar progress4" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+            
+            <div class="mt-2 pro5" style="float:left; margin-right: 20px;"></div> 
+<div class="mt-2 progress">
+  <div class="progress-bar progress5" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+            
+               
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="mt-4 addthis_inline_share_toolbox_llug"></div>
+            
+            
+    </div>
+     
+    
+      <div class="mt-3 image-title-wrap">
+      <button type="button" onclick="window.location.reload()" class="remove-image">다른 사진으로 해보기</button>
+    </div>
+  </div>
+</div>
+        
+        
+        <!-- 머신러닝 -->
+        
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+<script type="text/javascript">
+    // More API functions here:
+    // https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
+
+    // the link to your model provided by Teachable Machine export panel
+    const URL = "https://teachablemachine.withgoogle.com/models/UeYkpz37-/";
+
+    let model, webcam, labelContainer, maxPredictions;
+
+    // Load the image model and setup the webcam
+    async function init() {
+        const modelURL = URL + "model.json";
+        const metadataURL = URL + "metadata.json";
+
+        // load the model and metadata
+        // Refer to tmImage.loadFromFiles() in the API to support files from a file picker
+        // or files from your local hard drive
+        // Note: the pose library adds "tmImage" object to your window (window.tmImage)
+        model = await tmImage.load(modelURL, metadataURL);
+        maxPredictions = model.getTotalClasses();
+   
+        labelContainer = document.getElementById("label-container");
+        for (let i = 0; i < maxPredictions; i++) { // and class labels
+            labelContainer.appendChild(document.createElement("div"));
+        }
+    }
+
+  
+
+    // run the webcam image through the image model
+    async function predict() {
+        // predict can take in an image, video or canvas html element
+        var image = document.getElementById("thumb-image");
+        const prediction = await model.predict(image, false);
+        prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
+        
+        
+    
+           
+        console.log(prediction[0].className)
+        
+        
+        
+        var resultMessage;
+        switch(prediction[0].className) {
+  case "연애운":        
+    resultMessage = "<span style=color:#efadce;>연애운</span>" + "을 타고나셨네요" + "<div class='rm'>연애에 있어 자신감을 가져보세요! 좋은 소식이 있을지도..</div>"
+    break;
+  case "대인관계운":
+     resultMessage = "<span style=color:#6ea8fe;>대인관계운</span>" + "을 타고나셨네요" + "<div class='rm'>주변 사람들에게 선행을 배풀어 보세요! 몇배로 돌아올 것입니다</div>"
+    break;
+case "직업운":
+     resultMessage = "<span style=color:#a370f7;>직업운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 당신에게 안성맞춤인! 괜찮은 직업을 가지게 되실거에요!</div>"
+    break;
+case "재물운":
+     resultMessage = "<span style=color:#ffc107;>재물운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 기회가 온다면 놓치지 마세요! 큰 돈을 벌수도...</div>"
+    break;
+case "건강운":
+     resultMessage = "<span style=color:#20c997;>건강운</span>" + "을 타고나셨네요" + "<div class='rm'>뭐니뭐니해도 건강이 최고죠! <br>질병들 다 물러가라할 건강운을 지니고 계시네요!</div>"
+    break;
+  
+            default:
+}
+        
+        
+        
+        
+        $(".result-message").html(resultMessage)
+        var progressWidth = []; //<-이거 수정할거
+        
+        
+        
+        for (let i = 0; i < maxPredictions; i++) {
+            // const classPrediction =
+            //     prediction[i].className + ": " + Math.round(prediction[i].probability.toFixed(2) * 100) + '%';
+            // labelContainer.childNodes[i].innerHTML = classPrediction;
+            
+            
+            progressWidth[i] = Math.round(prediction[i].probability.toFixed(2) * 100) + '%';  //이것도 고칠거
+        
+        
+        
+        
+        }
+    console.log(progressWidth)
+        
+        // 막대그래프 부분
+        document.querySelector('.progress1').style.width = progressWidth[0];
+        document.querySelector('.progress2').style.width = progressWidth[1];
+        document.querySelector('.progress3').style.width = progressWidth[2];
+        document.querySelector('.progress4').style.width = progressWidth[3];
+        document.querySelector('.progress5').style.width = progressWidth[4];
+        
+        function percent(index) {
+  document.querySelector(".progress" +(index+1)).innerHTML = progressWidth[index]; 
+}
+        
+       percent(0);
+        percent(1);
+        percent(2);
+        percent(3);
+        percent(4);
+    
+         
+        
+            //색깔조정 수정할거  for문으로 하면 왜 classlist가 막히지
+        switch(prediction[0].className) {
+  case "연애운":           
+     document.querySelector('.progress1').classList.add("bg-danger"); 
+     document.querySelector('.pro1').innerHTML = "연애운"        
+    break;
+  case "대인관계운":
+     document.querySelector('.progress1').classList.add("bg-info");
+     document.querySelector('.pro1').innerHTML = "관계운" 
+    break;
+case "직업운":
+     document.querySelector('.progress1').classList.add("bg-success");
+    document.querySelector('.pro1').innerHTML = "직업운"
+    break;
+case "재물운":
+     document.querySelector('.progress1').classList.add("bg-warning");
+    document.querySelector('.pro1').innerHTML = "재물운"
+    break;
+case "건강운":
+     document.querySelector('.progress1').classList.add("bg-primary");
+    document.querySelector('.pro1').innerHTML = "건강운"
+    break;
+  
+            default:
+}
+    
+        switch(prediction[1].className) {
+  case "연애운":           
+     document.querySelector('.progress2').classList.add("bg-danger"); 
+     document.querySelector('.pro2').innerHTML = "연애운"        
+    break;
+  case "대인관계운":
+     document.querySelector('.progress2').classList.add("bg-info");
+     document.querySelector('.pro2').innerHTML = "관계운" 
+    break;
+case "직업운":
+     document.querySelector('.progress2').classList.add("bg-success");
+    document.querySelector('.pro2').innerHTML = "직업운"
+    break;
+case "재물운":
+     document.querySelector('.progress2').classList.add("bg-warning");
+    document.querySelector('.pro2').innerHTML = "재물운"
+    break;
+case "건강운":
+     document.querySelector('.progress2').classList.add("bg-primary");
+    document.querySelector('.pro2').innerHTML = "건강운"
+    break;
+  
+            default:
+}
+        
+        switch(prediction[2].className) {
+  case "연애운":           
+     document.querySelector('.progress3').classList.add("bg-danger"); 
+     document.querySelector('.pro3').innerHTML = "연애운"        
+    break;
+  case "대인관계운":
+     document.querySelector('.progress3').classList.add("bg-info");
+     document.querySelector('.pro3').innerHTML = "관계운" 
+    break;
+case "직업운":
+     document.querySelector('.progress3').classList.add("bg-success");
+    document.querySelector('.pro3').innerHTML = "직업운"
+    break;
+case "재물운":
+     document.querySelector('.progress3').classList.add("bg-warning");
+    document.querySelector('.pro3').innerHTML = "재물운"
+    break;
+case "건강운":
+     document.querySelector('.progress3').classList.add("bg-primary");
+    document.querySelector('.pro3').innerHTML = "건강운"
+    break;
+  
+            default:
+}
+    
+       switch(prediction[3].className) {
+  case "연애운":           
+     document.querySelector('.progress4').classList.add("bg-danger"); 
+     document.querySelector('.pro4').innerHTML = "연애운"        
+    break;
+  case "대인관계운":
+     document.querySelector('.progress4').classList.add("bg-info");
+     document.querySelector('.pro4').innerHTML = "관계운" 
+    break;
+case "직업운":
+     document.querySelector('.progress4').classList.add("bg-success");
+    document.querySelector('.pro4').innerHTML = "직업운"
+    break;
+case "재물운":
+     document.querySelector('.progress4').classList.add("bg-warning");
+    document.querySelector('.pro4').innerHTML = "재물운"
+    break;
+case "건강운":
+     document.querySelector('.progress4').classList.add("bg-primary");
+    document.querySelector('.pro4').innerHTML = "건강운"
+    break;
+  
+            default:
+}
+ 
+        switch(prediction[4].className) {
+  case "연애운":           
+     document.querySelector('.progress5').classList.add("bg-danger"); 
+     document.querySelector('.pro5').innerHTML = "연애운"        
+    break;
+  case "대인관계운":
+     document.querySelector('.progress5').classList.add("bg-info");
+     document.querySelector('.pro5').innerHTML = "관계운" 
+    break;
+case "직업운":
+     document.querySelector('.progress5').classList.add("bg-success");
+    document.querySelector('.pro5').innerHTML = "직업운"
+    break;
+case "재물운":
+     document.querySelector('.progress5').classList.add("bg-warning");
+    document.querySelector('.pro5').innerHTML = "재물운"
+    break;
+case "건강운":
+     document.querySelector('.progress5').classList.add("bg-primary");
+    document.querySelector('.pro5').innerHTML = "건강운"
+    break;
+  
+            default:
+}
+        
+    }
+    
+    
+</script>
+
+        
+        
+        <!-- 이미지업로드 js -->
+        
+        <script>
+        function readURL(input) {
+  if (input.files && input.files[0]) {
+
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('.image-upload-wrap').hide();
+
+      $('.file-upload-image').attr('src', e.target.result);
+      $('.file-upload-content').show();
+
+      $('.image-title').html(input.files[0].name);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+
+      init();
+      
+      
+      // 로딩부분
+      document.querySelector('.loadings').style.display = "block"
+      document.querySelector('.progress-cover').style.display = "none"
+      
+      
+      
+      setTimeout(function() {
+          predict();
+          document.querySelector('.loadings').style.display = "none"
+          document.querySelector('.progress-cover').style.display = "block"
+          console.log('Works!');
+}, 5000);
+      
+      
+  } else {
+    removeUpload();
+  }
+}
+
+function removeUpload() {
+  $('.file-upload-input').replaceWith($('.file-upload-input').clone());
+  $('.file-upload-content').hide();
+  $('.image-upload-wrap').show();
+}
+$('.image-upload-wrap').bind('dragover', function () {
+		$('.image-upload-wrap').addClass('image-dropping');
+	});
+	$('.image-upload-wrap').bind('dragleave', function () {
+		$('.image-upload-wrap').removeClass('image-dropping');
+});
+
+        </script>
+        
+        <!-- 부트스트랩 js -->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        
+
+        
+</body>
+    
+    
+    <!-- Copyright (c) 2021 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
+
+
+    
+   <!-- 지식재산권 안내 및 라이선스
+Copyright © 2013, Woowa Brothers Corporation (https://www.woowahan.com), with Reserved Font Name BM HANNA 11yrs old, BM HANNA 11yrs old OTF, BMHANNAAir_otf, BMHANNAAir_ttf, BMHANNAPro_otf, BMHANNAPro_ttf, BM JUA_TTF, BM JUA_OTF, BM DoHyeon, BM DoHyeon OTF, BM YEONSUNG, BM YEONSUNG OTF, BM KIRANGHAERANG, BM KIRANGHAERANG OTF, BMEULJIRO, BMEULJIROTTF, BM EULJITO 10 YEARS LATER, BM EULJITO 10 YEARS LATER TTF.
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+
+This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL -->
+
+    
+</html>

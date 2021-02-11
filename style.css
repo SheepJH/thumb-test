@@ -1,0 +1,347 @@
+
+/* 이미지 업로드 */
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.file-upload {
+  background-color: #ffffff;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed #1FB264;
+  position: relative;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #1FB264;
+  border: 4px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #35465d;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+
+
+/* 네비게이션바 */
+
+.nav-distance{
+    padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #ffffff;
+}
+
+.navbar-light .navbar-brand{
+  font-family: 'BMHANNAAir';
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d;
+}
+
+/* 섹션 */
+.section{
+    margin-top : 100px;
+}
+
+.title {
+
+  font-family: 'BMYEONSUNG';
+  line-height: 1.67;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle {
+  font-family: 'BMHANNAAir';
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+.youtube-link{
+     font-family: NanumSquareR;
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+}
+
+.youtube-icon{
+    width:8%
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  html {
+    font-size : 10px;
+  }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+}
+
+/* box */
+
+.file-upload{
+      width: 100%;
+    /* height: 50vw; */
+    border-radius: 10px;
+    border: solid 1.5px #f6f7fa;
+    background-color: #f6f7fa;
+        padding: 13% 3%;
+}
+
+.image-upload-wrap{
+    object-fit: contain;
+  border-radius: 10px;
+  border: dashed 1.5px #35465d;
+  background-color: #ffffff;
+    width: 70%;
+    margin: 0 auto;
+}
+.image-upload-wrap:hover {
+    background-color: #929dab;
+    border: 1.5px dashed #ffffff;
+}
+
+.upload {
+    width: 20%
+}
+
+.upload-text{
+    font-family: 'BMHANNAAir';
+  font-size: 1.8rem;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+        width: 50%;
+    margin: 0 auto;
+}
+
+.remove-image{
+    width: 35%;
+}
+
+/* progress */
+
+.progress{
+    height: 30px
+     
+}
+
+.progress-cover{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+
+
+/* 폰트 */
+
+/* 배민연성체 */
+@font-face {
+    font-family: 'BMYEONSUNG';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMYEONSUNG.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+}
+
+/* 배민한나체 */
+@font-face {
+    font-family: 'BMHANNAAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.0/BMHANNAAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 배민주아체 */
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.loading-text{
+    font-family: 'BMJUA';
+    font-size: 1.5rem;
+}
+
+
+.progress-cover{
+    font-family: 'BMYEONSUNG';
+    font-size: 19px;
+}
+
+.result-message{
+    font-family: 'BMJUA';
+    font-size : 2rem;
+}
+
+.remove-image{
+    font-family: 'BMHANNAAir';
+}
+
+/* 프로그레스바 color */
+/* pink */
+.bg-danger{
+    background-color : #efadce!important;
+}
+/* gold */
+.bg-warning{
+    background-color : #ffc107!important;
+}
+/* green */
+.bg-primary{
+    background-color : #20c997!important;
+}
+/* blue */
+.bg-info{
+    background-color : #6ea8fe!important;
+}
+/* purple */
+.bg-success{
+    background-color : #a370f7!important;
+}
+
+.spinner-grow{
+    color : #20c997!important;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5%
+}
+
+/* 로딩 스패너 */
+.sp1{
+    color:#dc3545!important;
+}
+.sp2{
+    color:#fd7e14!important;
+}
+.sp3{
+    color:#ffc107!important;
+}
+.sp4{
+    color:#198754!important;
+}
+.sp5{
+    color:#0dcaf0!important;
+}
+.sp6{
+    color:#0d6efd!important;
+}
+.sp7{
+    color:#6610f2!important;
+}
+
+/* 설명글자 */
+.rm{
+    font-size: 1.5rem;
+    font-family: 'BMHANNAAir';
+    font-weight: 500;
+}
+
+
