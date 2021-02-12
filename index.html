@@ -33,10 +33,12 @@
         <nav class="navbar navbar-expand-lg navbar-light nav-distance">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">따봉테스트</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      
+    </button> -->
+      <span class="help">제작도움 : 유튜브 조코딩 채널</span>
+      
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -63,7 +65,7 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
-    </div>
+    </div> -->
   </div>
 </nav>
         
@@ -225,16 +227,16 @@
         var resultMessage;
         switch(prediction[0].className) {
   case "연애운":        
-    resultMessage = "<span style=color:#efadce;>연애운</span>" + "을 타고나셨네요" + "<div class='rm'>연애에 있어 자신감을 가져보세요! 좋은 소식이 있을지도..</div>"
+    resultMessage = "<span style=color:#efadce;>연애운</span>" + "을 타고나셨네요" + "<div class='rm'>연애에 있어 자신감을 가져보세요! 좋은 소식이 있을지도...!</div>"
     break;
   case "대인관계운":
-     resultMessage = "<span style=color:#6ea8fe;>대인관계운</span>" + "을 타고나셨네요" + "<div class='rm'>주변 사람들에게 선행을 배풀어 보세요! 몇배로 돌아올 것입니다</div>"
+     resultMessage = "<span style=color:#6ea8fe;>대인관계운</span>" + "을 타고나셨네요" + "<div class='rm'>주변 사람들에게 선행을 배풀어 보세요!<br> 몇배로 돌아올 것입니다!</div>"
     break;
 case "직업운":
-     resultMessage = "<span style=color:#a370f7;>직업운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 당신에게 안성맞춤인! 괜찮은 직업을 가지게 되실거에요!</div>"
+     resultMessage = "<span style=color:#a370f7;>직업운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 당신에게 안성맞춤인 직업을 가지게 되실거에요!</div>"
     break;
 case "재물운":
-     resultMessage = "<span style=color:#ffc107;>재물운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 기회가 온다면 놓치지 마세요! 큰 돈을 벌수도...</div>"
+     resultMessage = "<span style=color:#ffc107;>재물운</span>" + "을 타고나셨네요" + "<div class='rm'>앞으로 당신에게 기회가 온다면 놓치지 마세요! 큰 돈을 벌 수도...!</div>"
     break;
 case "건강운":
      resultMessage = "<span style=color:#20c997;>건강운</span>" + "을 타고나셨네요" + "<div class='rm'>뭐니뭐니해도 건강이 최고죠! <br>질병들 다 물러가라할 건강운을 지니고 계시네요!</div>"
